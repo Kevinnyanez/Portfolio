@@ -15,13 +15,99 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     color: white;
     text-align: center;
     position: relative;
 }
 
-.cabeza {
+.titu {
 
+    color: var(--Texto_principal);
+    text-align: center;
+    padding-left: 75px;
+    font-size: 45px;
+    font-weight: bold ;
+    font-family: helvetica;
+
+
+}
+
+.parra{
+
+    width: 450px;
+    text-align: left;
+    padding-left: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: helvetica;
+    
+}
+
+.btn-hero {
+
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--Texto_principal);
+    border-color: var(--Hover_acción);
+    border: solid 1px;
+    width: 175px;
+}
+
+.btn-hero:hover{
+
+    background-color: var(--Texto_principal);
+    color: var(--Hover_acción);
+    border: 1px solid var(--Hover_acción); 
+    
+}
+
+.sobre-mi {
+
+    text-align: center;
+}
+
+
+.titu-sobremi {
+
+    color: var(--Fondo);
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold ;
+    font-family: helvetica;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.container-deco {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.deco {
+    display: inline-flex;
+    height: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--Fondo);
+    border: solid 1px;
+    width: 75px;
+    font-size: 12px;
+   justify-content: center;
+   align-items: center;
+    gap: 6px;
+}
+
+.deco::after {
+    padding-bottom: 1px;
+    content: "↓";
+    font-size: 9px;
+    transition: transform 0.2s ease;
+    display: inline-block;
 }
