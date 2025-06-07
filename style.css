@@ -42,6 +42,9 @@ body {
 
 
 
+
+
+
 .icon-container {
   position: absolute;
   top: 0;
@@ -281,18 +284,22 @@ body {
 }
 
 .btn-card {
-  background-color: #0ea5e9;
-  border: none;
-  padding: 10px 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border: 1px solid #7ac8ff;
+  background-color: transparent;
+  color: #a6fff2;
   border-radius: 10px;
-  color: white;
-  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 6px rgba(122, 200, 255, 0.2);
+  gap: 10rem;
 }
 
 .btn-card:hover {
-  background-color: #0284c7;
+  background-color: rgba(122, 200, 255, 0.1);
+  box-shadow: 0 0 15px rgba(122, 200, 255, 0.4);
 }
 
 .leng {
@@ -370,3 +377,103 @@ body {
 }
 
 
+.seccion-proyectos {
+  padding: 4rem 2rem;
+  background-color: #0f0f1a; /* mismo fondo oscuro */
+  color: #fff;
+  text-align: center;
+}
+
+.titu-proyectos {
+  ffont-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffd0;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  background: linear-gradient(90deg, #00ffd0, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  animation: flicker 3s infinite;
+  margin-bottom: 10px;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card-proyecto {
+  background-color: #1e293b;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-proyecto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.img-proyecto {
+  width: 50%;
+  height: 180px;
+  object-fit: center;
+}
+
+.contenido-proyecto {
+  padding: 1rem;
+  gap: 10rem;
+}
+
+.nombre-proyecto {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  gap: 10rem;
+}
+
+.descripcion-proyecto {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+  gap: 10rem;
+}
+
+.btn-proyecto {
+ font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border: 1px solid #7ac8ff;
+  background-color: transparent;
+  color: #a6fff2;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 6px rgba(122, 200, 255, 0.2);
+  gap: 10rem;
+  
+}
+
+.btn-proyecto:hover {
+   background-color: rgba(122, 200, 255, 0.1);
+  box-shadow: 0 0 15px rgba(122, 200, 255, 0.4);
+}
+.proyecto-lenguajes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-top: 25px;
+}
+
+.lenguaje-tag {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
