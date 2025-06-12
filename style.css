@@ -8,6 +8,7 @@
 
 body {
     background-color: #0f0f1a;
+    padding-top: 60px; 
 }
 
 
@@ -40,19 +41,14 @@ body {
   max-height: 90%;
 }
 
-
-
-
-
-
 .icon-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* ← evita interferencia con los clics en los botones */
-  z-index: 0; /* que se queden detrás del contenido */
+  pointer-events: none; 
+  z-index: 0; 
 }
 
 .icon {
@@ -182,9 +178,6 @@ body {
     transform: translateX(-50%);
   }
 }
-
-
-
 
 .sobre-mi {
 
@@ -375,11 +368,9 @@ body {
     transform: translateX(-50%);
   }
 }
-
-
-.seccion-proyectos {
+.conte-proyectos {
   padding: 4rem 2rem;
-  background-color: #0f0f1a; /* mismo fondo oscuro */
+  background-color: #0f0f1a; 
   color: #fff;
   text-align: center;
 }
@@ -399,7 +390,7 @@ body {
 }
 
 .grid-proyectos {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
@@ -477,3 +468,181 @@ body {
   font-size: 0.8rem;
   font-weight: bold;
 }
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #7ac8ff;
+  z-index: 1000;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #a6fff2;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #a6fff2, #7ac8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #a6fff2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #7ac8ff;
+  text-shadow: 0 0 5px #7ac8ff;
+}
+
+.main-footer {
+  background-color: #121212;
+  color: #a6fff2;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid #7ac8ff;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-footer p {
+  flex: 1 1 300px;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  flex: 1 1 150px;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-icons a  {
+  color: #a6fff2;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #7ac8ff;
+  text-shadow: 0 0 8px #7ac8ff;
+}
+
+.contact-section {
+  max-width: 420px;
+  margin: 2rem auto;
+  padding: 1.5rem 1.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #a6fff2;
+  background-color: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #7ac8ff44;
+  box-sizing: border-box;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 1.4rem;
+  color: #7ac8ff;
+}
+
+.contact-section label {
+  display: block;
+  margin: 1rem 0 0.3rem;
+  font-weight: 600;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #111;
+  background-color: #a6fff2;
+  resize: none; 
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  outline: 2px solid #7ac8ff;
+  background-color: #d9faff;
+}
+
+.contact-section button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #7ac8ff;
+  color: #111;
+  font-weight: 700;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #4a8fcc;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 140px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: fixed;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
